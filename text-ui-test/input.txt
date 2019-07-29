@@ -1,0 +1,16 @@
+help
+list
+add Alice Bee p/12345678 e/alice@example.com
+list
+add Ben Chee  p/22223333 e/ben@example.com
+list
+clear
+list
+add Chris  p/33334444 e/chris@example.com
+list
+add
+add Daryl
+add Daryl p/ e/
+add Daryl p/44445555 e/invalid
+add Daryl p/invalid e/daryl@example.com
+exit

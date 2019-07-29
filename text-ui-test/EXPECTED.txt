@@ -1,0 +1,93 @@
+|| ===================================================
+|| ===================================================
+|| Contacts - Version 0.0
+|| Welcome to Contacts!
+|| ===================================================
+|| Enter command: || [Command entered:help]
+|| add: Adds a person to contacts.
+|| 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
+|| 	Example: add John Doe p/98765432 e/johnd@gmail.com
+|| 
+|| list: Displays all persons as a list with index numbers.
+|| 	Example: list
+|| 
+|| clear: Clears all contacts.
+|| 	Example: clear
+|| 
+|| exit: Exits the program.
+|| 	Example: exit
+|| 
+|| help: Shows program usage instructions.
+|| 	Example: help
+|| ===================================================
+|| Enter command: || [Command entered:list]
+|| 
+|| 0 persons found!
+|| ===================================================
+|| Enter command: || [Command entered:add Alice Bee p/12345678 e/alice@example.com]
+|| New person added: Alice Bee, Phone: 12345678, Email: alice@example.com
+|| ===================================================
+|| Enter command: || [Command entered:list]
+|| 	1. Alice Bee  Phone Number: 12345678  Email: alice@example.com
+|| 
+|| 1 persons found!
+|| ===================================================
+|| Enter command: || [Command entered:add Ben Chee  p/22223333 e/ben@example.com]
+|| New person added: Ben Chee, Phone: 22223333, Email: ben@example.com
+|| ===================================================
+|| Enter command: || [Command entered:list]
+|| 	1. Alice Bee  Phone Number: 12345678  Email: alice@example.com
+|| 	2. Ben Chee  Phone Number: 22223333  Email: ben@example.com
+|| 
+|| 2 persons found!
+|| ===================================================
+|| Enter command: || [Command entered:clear]
+|| Contacts have been cleared!
+|| ===================================================
+|| Enter command: || [Command entered:list]
+|| 
+|| 0 persons found!
+|| ===================================================
+|| Enter command: || [Command entered:add Chris  p/33334444 e/chris@example.com]
+|| New person added: Chris, Phone: 33334444, Email: chris@example.com
+|| ===================================================
+|| Enter command: || [Command entered:list]
+|| 	1. Chris  Phone Number: 33334444  Email: chris@example.com
+|| 
+|| 1 persons found!
+|| ===================================================
+|| Enter command: || [Command entered:add]
+|| Invalid command format: add 
+|| add: Adds a person to contacts.
+|| 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
+|| 	Example: add John Doe p/98765432 e/johnd@gmail.com
+|| 
+|| ===================================================
+|| Enter command: || [Command entered:add Daryl]
+|| Invalid command format: add 
+|| add: Adds a person to contacts.
+|| 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
+|| 	Example: add John Doe p/98765432 e/johnd@gmail.com
+|| 
+|| ===================================================
+|| Enter command: || [Command entered:add Daryl p/ e/]
+|| Invalid command format: add 
+|| add: Adds a person to contacts.
+|| 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
+|| 	Example: add John Doe p/98765432 e/johnd@gmail.com
+|| 
+|| ===================================================
+|| Enter command: || [Command entered:add Daryl p/44445555 e/invalid]
+|| Invalid command format: add 
+|| add: Adds a person to contacts.
+|| 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
+|| 	Example: add John Doe p/98765432 e/johnd@gmail.com
+|| 
+|| ===================================================
+|| Enter command: || [Command entered:add Daryl p/invalid e/daryl@example.com]
+|| New person added: Daryl, Phone: invalid, Email: daryl@example.com
+|| ===================================================
+|| Enter command: || [Command entered:exit]
+|| Exiting Contacts... Good bye!
+|| ===================================================
+|| ===================================================
