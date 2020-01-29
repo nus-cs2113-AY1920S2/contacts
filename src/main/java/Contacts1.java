@@ -6,8 +6,6 @@
  * ====================================================================
  */
 
-// Quinn's pull request
-
 import java.util.Scanner;
 
 
@@ -614,7 +612,7 @@ public class Contacts1 {
      * @return whether arg is a valid person email
      */
     private static boolean isValidEmail(String email) {
-        return !email.isEmpty() && email.contains("@");
+        return !email.isEmpty() && email.contains("@") && email.contains(".");
         //TODO: implement a better validation
     }
 
