@@ -146,7 +146,7 @@ public class Contacts1 {
         while (true) {
             String userCommand = getUserInput();
             echoUserCommand(userCommand);
-            String feedback = executeCommand(userCommand);
+            String feedback = executeCommand(userCommand); // likely to check for vilation
             showResultToUser(feedback);
         }
     }
