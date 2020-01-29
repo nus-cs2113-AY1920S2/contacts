@@ -3,14 +3,12 @@ import java.util.Scanner;
 
 public class Contacts0 {
 
+    public static final int MAXIMUM_CAPACITY = 100;
+
     public static void main(String[] args) {
         final Scanner SCANNER = new Scanner(System.in);
-        System.out.println("|| ===================================================");
-        System.out.println("|| ===================================================");
-        System.out.println("|| Contacts - Version 0.0");
-        System.out.println("|| Welcome to Contacts!");
-        System.out.println("|| ===================================================");
-        String[][] list = new String[100][3];
+        displayWelcomeMessage();
+        String[][] list = new String[MAXIMUM_CAPACITY][3];
         int count = 0;
         while (true) {
             System.out.print("|| " + "Enter command: ");
@@ -97,26 +95,10 @@ public class Contacts0 {
                 feedback = "Contacts have been cleared!";
                 break;
             case "help":
-                feedback = (String.format("%1$s: %2$s", "add", "Adds a person to contacts.") + (System.lineSeparator() + "|| ")
-                        + String.format("\tParameters: %1$s", "NAME "
-                        + "p/" + "PHONE_NUMBER "
-                        + "e/" + "EMAIL") + (System.lineSeparator() + "|| ")
-                        + String.format("\tExample: %1$s", "add" + " John Doe p/98765432 e/johnd@gmail.com") + (System.lineSeparator() + "|| ")) + (System.lineSeparator() + "|| ")
-                        + (String.format("%1$s: %2$s", "list", "Displays all persons as a list with index numbers.") + (System.lineSeparator() + "|| ")
-                        + String.format("\tExample: %1$s", "list") + (System.lineSeparator() + "|| ")) + (System.lineSeparator() + "|| ")
-                        + (String.format("%1$s: %2$s", "clear", "Clears all contacts.") + (System.lineSeparator() + "|| ")
-                        + String.format("\tExample: %1$s", "clear") + (System.lineSeparator() + "|| ")) + (System.lineSeparator() + "|| ")
-                        + (String.format("%1$s: %2$s", "exit", "Exits the program.")+ (System.lineSeparator() + "|| ")
-                        + String.format("\tExample: %1$s", "exit")) + (System.lineSeparator() + "|| ") + (System.lineSeparator() + "|| ")
-                        + (String.format("%1$s: %2$s", "help", "Shows program usage instructions.")+ (System.lineSeparator() + "|| ")
-                        + String.format("\tExample: %1$s", "help"));
+                feedback = getHelpMessage();
                 break;
             case "exit":
-                for (String m1 : new String[]{"Exiting Contacts... Good bye!",
-                        "===================================================",
-                        "==================================================="}) {
-                    System.out.println("|| " + m1);
-                }
+                displayExitMessage();
                 System.exit(0);
                 // Fallthrough
             default:
@@ -144,6 +126,40 @@ public class Contacts0 {
                 System.out.println("|| " + m);
             }
         }
+    }
+
+    private static String getHelpMessage() {
+        String feedback;
+        feedback = (String.format("%1$s: %2$s", "add", "Adds a person to contacts.") + (System.lineSeparator() + "|| ")
+                + String.format("\tParameters: %1$s", "NAME "
+                + "p/" + "PHONE_NUMBER "
+                + "e/" + "EMAIL") + (System.lineSeparator() + "|| ")
+                + String.format("\tExample: %1$s", "add" + " John Doe p/98765432 e/johnd@gmail.com") + (System.lineSeparator() + "|| ")) + (System.lineSeparator() + "|| ")
+                + (String.format("%1$s: %2$s", "list", "Displays all persons as a list with index numbers.") + (System.lineSeparator() + "|| ")
+                + String.format("\tExample: %1$s", "list") + (System.lineSeparator() + "|| ")) + (System.lineSeparator() + "|| ")
+                + (String.format("%1$s: %2$s", "clear", "Clears all contacts.") + (System.lineSeparator() + "|| ")
+                + String.format("\tExample: %1$s", "clear") + (System.lineSeparator() + "|| ")) + (System.lineSeparator() + "|| ")
+                + (String.format("%1$s: %2$s", "exit", "Exits the program.")+ (System.lineSeparator() + "|| ")
+                + String.format("\tExample: %1$s", "exit")) + (System.lineSeparator() + "|| ") + (System.lineSeparator() + "|| ")
+                + (String.format("%1$s: %2$s", "help", "Shows program usage instructions.")+ (System.lineSeparator() + "|| ")
+                + String.format("\tExample: %1$s", "help"));
+        return feedback;
+    }
+
+    private static void displayExitMessage() {
+        for (String m1 : new String[]{"Exiting Contacts... Good bye!",
+                "===================================================",
+                "==================================================="}) {
+            System.out.println("|| " + m1);
+        }
+    }
+
+    private static void displayWelcomeMessage() {
+        System.out.println("|| ===================================================");
+        System.out.println("|| ===================================================");
+        System.out.println("|| Contacts - Version 0.0");
+        System.out.println("|| Welcome to Contacts!");
+        System.out.println("|| ===================================================");
     }
 
 }
