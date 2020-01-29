@@ -6,7 +6,6 @@ public class Contacts0 {
     public static void main(String[] args) {
         final Scanner SCANNER = new Scanner(System.in);
         System.out.println("|| ===================================================");
-        System.out.println("|| ===================================================");
         System.out.println("|| Contacts - Version 0.0");
         System.out.println("|| Welcome to Contacts!");
         System.out.println("|| ===================================================");
