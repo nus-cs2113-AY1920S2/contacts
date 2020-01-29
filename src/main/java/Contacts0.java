@@ -1,7 +1,9 @@
 import java.util.Scanner;
-
-
 public class Contacts0 {
+
+    public static final int MAXIMUM_CAPACITY = 100;
+    public static final int MAXIMUM_PARAM = 3;
+    public static final char LEADING_CHAR = '#';
 
     public static void main(String[] args) {
         final Scanner SCANNER = new Scanner(System.in);
@@ -10,12 +12,12 @@ public class Contacts0 {
         System.out.println("|| Contacts - Version 0.0");
         System.out.println("|| Welcome to Contacts!");
         System.out.println("|| ===================================================");
-        String[][] list = new String[100][3];
+        String[][] list = new String[MAXIMUM_CAPACITY][MAXIMUM_PARAM];
         int count = 0;
         while (true) {
             System.out.print("|| " + "Enter command: ");
             String inputLine = SCANNER.nextLine();
-            while (inputLine.trim().isEmpty() || inputLine.trim().charAt(0) == '#') {
+            while (inputLine.trim().isEmpty() || inputLine.trim().charAt(0) == LEADING_CHAR) {
                 inputLine = SCANNER.nextLine();
             }
             String userCommand = inputLine;
