@@ -664,7 +664,7 @@ public class Contacts1 {
     }
 
 
-    
+
     /*
      * ============================
      *         UTILITY METHODS
