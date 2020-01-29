@@ -50,7 +50,7 @@ public class Contacts1 {
     private static final String MESSAGE_GOODBYE = "Exiting Contacts... Good bye!";
     private static final String MESSAGE_INVALID_COMMAND_FORMAT = "Invalid command format: %1$s " + LS + "%2$s";
     private static final String MESSAGE_PERSONS_FOUND_OVERVIEW = "%1$d persons found!";
-    private static final String MESSAGE_WELCOME = "Welcome to Contacts!";
+    private static final String MESSAGE_WELCOME = "Welcome to Contactsv1.0!";
 
     // These are the prefix strings to define the data type of a command parameter
     private static final String PERSON_DATA_PREFIX_PHONE = "p/";
