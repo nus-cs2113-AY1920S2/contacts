@@ -7,7 +7,7 @@ public class Contacts0 {
         final Scanner SCANNER = new Scanner(System.in);
         System.out.println("|| ===================================================");
         System.out.println("|| ===================================================");
-        System.out.println("|| Contacts - Version 0.0");
+        System.out.println("|| Contacts - Version 0.1");
         System.out.println("|| Welcome to Contacts!");
         System.out.println("|| ===================================================");
         String[][] list = new String[100][3];
