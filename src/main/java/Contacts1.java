@@ -50,7 +50,7 @@ public class Contacts1 {
     private static final String MESSAGE_GOODBYE = "Exiting Contacts... Good bye!";
     private static final String MESSAGE_INVALID_COMMAND_FORMAT = "Invalid command format: %1$s " + LS + "%2$s";
     private static final String MESSAGE_PERSONS_FOUND_OVERVIEW = "%1$d persons found!";
-    private static final String MESSAGE_WELCOME = "Welcome to Contacts!";
+    private static final String MESSAGE_WELCOME = "Welcome to Contacts! A program where you can add your favourite people!";
 
     // These are the prefix strings to define the data type of a command parameter
     private static final String PERSON_DATA_PREFIX_PHONE = "p/";
@@ -159,7 +159,7 @@ public class Contacts1 {
      * ====================================================================
      */
 
-    private static void showWelcomeMessage() {
+    private static void     showWelcomeMessage() {
         showToUser(DIVIDER, DIVIDER, VERSION, MESSAGE_WELCOME, DIVIDER);
     }
 
@@ -600,6 +600,7 @@ public class Contacts1 {
      *
      * @param phone to be validated
      */
+
     private static boolean isValidPhone(String phone) {
         return !phone.isEmpty();
         //TODO: implement a better validation
