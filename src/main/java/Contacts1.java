@@ -591,8 +591,9 @@ public class Contacts1 {
      * @param name to be validated
      */
     private static boolean isValidName(String name) {
-        return !name.isEmpty();
+        //return !name.isEmpty();
         //TODO: implement a better validation
+        return name.matches("^[\\p{L} .'-]+$");
     }
 
     /**
@@ -601,8 +602,9 @@ public class Contacts1 {
      * @param phone to be validated
      */
     private static boolean isValidPhone(String phone) {
-        return !phone.isEmpty();
+        //return !phone.isEmpty();
         //TODO: implement a better validation
+        return phone.matches("(6|8|9)[0-9]{7}");
     }
 
     /**
@@ -612,8 +614,9 @@ public class Contacts1 {
      * @return whether arg is a valid person email
      */
     private static boolean isValidEmail(String email) {
-        return !email.isEmpty() && email.contains("@");
+        //return !email.isEmpty() && email.contains("@");
         //TODO: implement a better validation
+        return email.matches("^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$");
     }
 
 
