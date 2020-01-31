@@ -682,7 +682,6 @@ public class Contacts1 {
         return s.replace(sign, "");
     }
 
-
-    //dummy command for branch testing
+    //merge successfully
 
 }
