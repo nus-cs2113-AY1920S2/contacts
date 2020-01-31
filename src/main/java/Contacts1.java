@@ -684,4 +684,6 @@ public class Contacts1 {
 
     //merge successfully
 
+    //add another dummy on feature1
+
 }
