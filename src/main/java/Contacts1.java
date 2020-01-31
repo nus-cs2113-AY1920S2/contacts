@@ -582,6 +582,7 @@ public class Contacts1 {
     private static boolean isPersonDataValid(String[] person) {
         return isValidName(person[PERSON_DATA_INDEX_NAME])
                 && isValidPhone(person[PERSON_DATA_INDEX_PHONE])
+                && isValidPhone(person[PERSON_DATA_INDEX_PHONE])
                 && isValidEmail(person[PERSON_DATA_INDEX_EMAIL]);
     }
 
