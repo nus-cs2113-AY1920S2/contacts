@@ -3,23 +3,27 @@ import java.util.Scanner;
 
 public class Contacts0 {
 
+    public static final int MAXIMUM_CAPACITY = 100;
+    public static final String ENTER_COMMAND = "Enter command: ";
+    public static final String COMMAND_ENTERED = "Command entered:";
+    public static final String SEPARATOR = "|| ";
+    public static final String LINE_BREAK = "|| ===================================================";
+
     public static void main(String[] args) {
         final Scanner SCANNER = new Scanner(System.in);
-        System.out.println("|| ===================================================");
-        System.out.println("|| ===================================================");
-        System.out.println("|| Contacts - Version 0.0");
-        System.out.println("|| Welcome to Contacts!");
-        System.out.println("|| ===================================================");
-        String[][] list = new String[100][3];
+
+        displayWelcomeMessage();
+
+        String[][] list = new String[MAXIMUM_CAPACITY][3];
         int count = 0;
         while (true) {
-            System.out.print("|| " + "Enter command: ");
+            System.out.print(SEPARATOR + ENTER_COMMAND);
             String inputLine = SCANNER.nextLine();
             while (inputLine.trim().isEmpty() || inputLine.trim().charAt(0) == '#') {
                 inputLine = SCANNER.nextLine();
             }
             String userCommand = inputLine;
-            System.out.println("|| [Command entered:" + userCommand + "]");
+            System.out.println(SEPARATOR + "[" + COMMAND_ENTERED + userCommand + "]");
             String feedback;
             final String[] split = userCommand.trim().split("\\s+", 2);
             final String[] commandTypeAndParams = split.length == 2 ? split : new String[]{split[0], ""};
@@ -144,6 +148,14 @@ public class Contacts0 {
                 System.out.println("|| " + m);
             }
         }
+    }
+
+    private static void displayWelcomeMessage() {
+        System.out.println(LINE_BREAK);
+        System.out.println(LINE_BREAK);
+        System.out.println("|| Contacts - Version 0.0");
+        System.out.println("|| Welcome to Contacts!");
+        System.out.println(LINE_BREAK);
     }
 
 }
