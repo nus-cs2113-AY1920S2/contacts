@@ -682,7 +682,9 @@ public class Contacts1 {
         return s.replace(sign, "");
     }
 
-    //add dummy for master branch
+    //merge successfully
+
+    //add another dummy on feature1
 
     //add new dummy
 
