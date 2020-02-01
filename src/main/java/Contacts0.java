@@ -147,7 +147,7 @@ public class Contacts0 {
     private static void displayWelcomeMessage() {
         System.out.println("|| ===================================================");
         System.out.println("|| ===================================================");
-        System.out.println("|| Contacts - Version 0.1");
+        System.out.println("|| Contacts - Version 0.2");
         System.out.println("|| Welcome to Contacts!");
         System.out.println("|| ===================================================");
     }
