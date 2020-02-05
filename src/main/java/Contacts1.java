@@ -678,7 +678,7 @@ public class Contacts1 {
      * @return  string without the sign
      */
     private static String removePrefixSign(String s, String sign) {
-        return s.replace(sign, "");
+        return s.replace(sign, ""); 
     }
 
 }
