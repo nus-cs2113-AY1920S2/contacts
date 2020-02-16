@@ -19,7 +19,7 @@ public class Contacts1 {
     /**
      * Version info of the program.
      */
-    private static final String VERSION = "Contacts - Version 1.0";
+    private static final String VERSION = "Contacts - Version 0.0";
 
     /**
      * A decorative prefix added to the beginning of lines printed by AddressBook
@@ -593,6 +593,7 @@ public class Contacts1 {
     private static boolean isValidName(String name) {
         return !name.isEmpty();
         //TODO: implement a better validation
+
     }
 
     /**
@@ -603,6 +604,7 @@ public class Contacts1 {
     private static boolean isValidPhone(String phone) {
         return !phone.isEmpty();
         //TODO: implement a better validation
+
     }
 
     /**
