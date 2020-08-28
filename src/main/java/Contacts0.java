@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Contacts0 {
 
     public static void main(String[] args) {
+        // some changes lol
         final Scanner SCANNER = new Scanner(System.in);
         System.out.println("|| ===================================================");
         System.out.println("|| ===================================================");
