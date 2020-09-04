@@ -7,6 +7,7 @@ public class Contacts0 {
     public static void main(String[] args) {
         final Scanner SCANNER = new Scanner(System.in);
         showWelcomeMessage();
+
         String[][] list = new String[MAX_CONTACT][3];
         int count = 0;
         while (true) {
