@@ -7,7 +7,11 @@
  */
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
 
+/**
+ * erere
+ */
 
 /**
  * This class is used to maintain a list of person data which are saved
@@ -681,4 +685,11 @@ public class Contacts1 {
         return s.replace(sign, "");
     }
 
+    //merge successfully
+
+    //add another dummy on feature1
+
+    //add new dummy
+
+    //add dummy to add-countries
 }
